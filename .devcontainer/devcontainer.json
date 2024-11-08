@@ -1,0 +1,16 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Big Data Dev Environment",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "spark-master-service",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+ //"postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
+  "remoteUser": "root"
+}

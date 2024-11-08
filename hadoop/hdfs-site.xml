@@ -1,0 +1,26 @@
+<configuration>
+    <!-- Set HDFS replication factor -->
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+    <!-- Disable HDFS permissions for simplicity -->
+    <property>
+        <name>dfs.permissions</name>
+        <value>false</value>
+    </property>
+
+    <!-- Specify the directory for NameNode storage -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///data/hdfs/name</value>
+    </property>
+
+    <!-- Specify the directory for DataNode storage -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///data/hdfs/data</value>
+    </property>
+</configuration>
+
