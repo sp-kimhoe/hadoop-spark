@@ -10,8 +10,8 @@ services:
       - "9870:9870"  # HDFS web UI
       - "9000:9000"  # HDFS namenode
     volumes:
-      - hadoop_service_data:/hadoop/dfs/name
-      - hadoop_datanode:/data/hdfs/data
+      - ../hadoop/namenode:/hadoop/dfs/name
+      - ../hadoop/datanode:/data/hdfs/data
     networks:
       - hadoop_spark_network
 
